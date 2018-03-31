@@ -2,13 +2,13 @@ Fork Description
 ================
 
 This is a fork is an attempt to keep maintaining transit-python, at least while I keep using it.
-It adds Python 3 support and fixes a few issues that you can probably find in the [upstream
-repository issues](https://github.com/cognitect/transit-python/issues).
+It fixes a few issues that you can probably find in the
+[upstream repository issues](https://github.com/cognitect/transit-python/issues).
 
 You can install this version with
 
 ```bash
-pip --extra-index-url https://repo.fury.io/p-himik/ --pre install transit-python
+pip install -U --extra-index-url https://repo.fury.io/p-himik/ --pre ph-transit-python
 ```
 
 transit-python
@@ -216,7 +216,6 @@ This library is open source, developed internally by Cognitect. We welcome discu
 ## Copyright and License
 
 Copyright © 2014-2016 Cognitect
-Copyright © 2018 Eugene Pakhomov (p1himik@gmail.com)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

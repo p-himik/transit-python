@@ -17,11 +17,13 @@
 from setuptools import setup, find_packages
 import subprocess
 
-setup(name="transit-python",
+setup(name="ph-transit-python",
       version="0.8.302",
       description="Transit marshalling for Python",
       author="Cognitect",
-      url="https://github.com/cognitect/transit-python",
+      maintainer="Eugene Pakhomov",
+      maintainer_email="p1himik@gmail.com",
+      url="https://github.com/p-himik/transit-python",
       packages=find_packages(),
       install_requires=["python-dateutil", "msgpack-python"])
 
