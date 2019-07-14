@@ -13,7 +13,6 @@
 ## limitations under the License.
 
 import sys
-import msgpack
 import re
 from transit import pyversion
 from transit.constants import SUB, ESC, RES, MAP_AS_ARR, QUOTE
@@ -49,6 +48,7 @@ class Writer(object):
         elif protocol == "json_verbose":
             self.marshaler = VerboseJsonMarshaler(io, opts=opts)
         elif protocol == "msgpack":
+            import msgpack
             self.marshaler = MsgPackMarshaler(io, opts=opts)
         else:
             raise ValueError("'" + protocol + "' is not a supported protocol. " +

@@ -23,5 +23,5 @@ setup(name="transit-python",
       author="Cognitect",
       url="https://github.com/cognitect/transit-python",
       packages=find_packages(),
-      install_requires=["python-dateutil", "msgpack-python"])
+      install_requires=["python-dateutil"])
 

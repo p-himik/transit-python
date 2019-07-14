@@ -48,6 +48,10 @@ You can uninstall with:
 
  * `pip uninstall transit-python`
 
+And if you need msgpack support, you have to install it:
+
+ * `pip install msgpack-python`
+
 ## Usage
 
 ```python

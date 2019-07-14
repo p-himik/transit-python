@@ -25,5 +25,5 @@ setup(name="ph-transit-python",
       maintainer_email="p1himik@gmail.com",
       url="https://github.com/p-himik/transit-python",
       packages=find_packages(),
-      install_requires=["python-dateutil", "msgpack-python"])
+      install_requires=["python-dateutil"])
 

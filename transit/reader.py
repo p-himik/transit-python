@@ -13,7 +13,6 @@
 ## limitations under the License.
 
 import json
-import msgpack
 from collections import OrderedDict
 from transit import sosjson
 from transit.decoder import Decoder
@@ -28,6 +27,7 @@ class Reader(object):
         if protocol in ("json", "json_verbose"):
             self.reader = JsonUnmarshaler()
         elif protocol == "msgpack":
+            import msgpack
             self.reader = MsgPackUnmarshaler()
             self.unpacker = self.reader.unpacker
         else:
